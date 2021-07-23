@@ -100,16 +100,16 @@ PinName parse_pins(const char *str) {
 #endif
     } else if (str[0] == 'L') {  // LEDn
         switch (str[3]) {
-            case '1' : return LED1;
-            case '2' : return LED2;
-            case '3' : return LED3;
-            case '4' : return LED4;
+            case '1' : return NC;
+            case '2' : return NC;
+            case '3' : return NC;
+            case '4' : return NC;
         }
 
     } else if (str[0] == 'U') {  // USB?X
         switch (str[3]) {
-            case 'T' : return USBTX;
-            case 'R' : return USBRX;
+            case 'T' : return NC;
+            case 'R' : return NC;
         }
     }
 

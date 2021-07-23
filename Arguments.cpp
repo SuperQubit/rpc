@@ -70,7 +70,7 @@ char* Arguments::search_arg(char **arg, char *p, char next_sep) {
 
 template<> PinName Arguments::getArg<PinName>(void) {
     index++;
-    return parse_pins(argv[index]);
+    return NC; //parse_pins(argv[index]);
 }
 
 template<> int Arguments::getArg<int>(void) {

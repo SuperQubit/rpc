@@ -17,6 +17,7 @@
 #define MBED_CLASSES_H
 
 #include "rpc.h"
+#include "SerialOw.h"
 
 namespace mbed {
 
